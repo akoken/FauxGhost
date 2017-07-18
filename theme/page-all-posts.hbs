@@ -1,0 +1,23 @@
+{{!< default}}
+
+{{! Off Canvas }}
+{{> all_page/at_off_canvas }}
+
+{{! Header }}
+{{> all_page/at_header }}
+
+{{! Showcase }}
+{{> static_page/at_showcase }}
+
+{{#post}}    
+    <section class="row">
+        {{content}}    
+        <div id="postLoading">
+            <h3>Loading post archive...</h3>
+        </div>
+        <div id="postList" style="margin-left:20px"></div>
+    </section>
+{{/post}}
+
+{{! Footer }}
+{{> all_page/at_footer }}
